@@ -15,10 +15,10 @@ Smart Expense Tracker is a full-stack web application that helps users efficient
 
 ## 🛠 Tech Stack
 
-* **Frontend:** React, Tailwind CSS
-* **Backend:** Node.js, Express
-* **Database:** MongoDB
-* **Authentication:** JWT
+* **Frontend:** HTML, CSS 
+* **Backend:** PHP
+* **Database:** MySQL 
+* **Other Tools**: Visual Studio Code, XAMPP, GitHub, Chart.js
 
 ## 📊 Key Highlights
 
