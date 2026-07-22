@@ -1,215 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Nexora</title>
+<meta charset="UTF-8">
+<title>Nexora</title>
+<link rel="stylesheet" href="style.css">
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-            color: #ffffff;
-        }
+<style>
 
-        header {
-            background-color: #0a192f;
-            padding: 20px;
-            text-align: center;
-        }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-        section {
-            padding: 20px;
-            margin: 20px;
-            border-radius: 10px;
-        }
+body{
+    font-family:Arial,sans-serif;
+    background:linear-gradient(to right,#0f2027,#203a43,#2c5364);
+    color:#fff;
+}
 
-        .light-section {
-            background-color: rgba(255, 255, 255, 0.1);
-        }
+header{
+    background:#0a192f;
+    padding:20px;
+    text-align:center;
+}
 
-        .dark-section {
-            background-color: rgba(0, 0, 0, 0.4);
-        }
+section{
+    padding:20px;
+    margin:20px;
+    border-radius:10px;
+}
 
-        h1, h2, h3 {
-            color: #00d4ff;
-        }
+.light-section{
+    background:rgba(255,255,255,.1);
+}
 
-        img {
-            border-radius: 10px;
-        }
+.dark-section{
+    background:rgba(0,0,0,.4);
+}
 
-        a {
-            color: #00ffcc;
-            text-decoration: none;
-        }
+h1,h2,h3{
+    color:#00d4ff;
+}
 
-        a:hover {
-            text-decoration: underline;
-        }
+img{
+    border-radius:10px;
+}
 
-        footer {
-            text-align: center;
-            padding: 15px;
-            background-color: #0a192f;
-        }
-    </style>
+a{
+    color:#00ffcc;
+    text-decoration:none;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+footer{
+    text-align:center;
+    padding:15px;
+    background:#0a192f;
+}
+</style>
 </head>
 
 <body>
 
-    <marquee style="background-color: #001f3f; padding: 10px;">
-        🚀 Welcome to Nexora – Smart Expense Tracker 🚀
-    </marquee>
+<marquee style="background-color:#001f3f;padding:10px;">
+🚀 Welcome to Nexora – Smart Expense Tracker 🚀
+</marquee>
 
-    <header>
-        <h1>Nexora</h1>
-        <h3>Smart Expense Tracker</h3>
-        <h4>A website made by Chimbook Halder</h4>
-    </header>
+<header>
+<h1>Nexora</h1>
+<h3>Smart Expense Tracker</h3>
+<h4>A website made by Chimbook Halder</h4>
+</header>
 
-    <section class="light-section">
-        <h2>About</h2>
-        <center>
-            <img src="pic3.png" width="400">
-        </center>
-        <p>
-            Smart Expense Tracker is a full-stack web application that helps users efficiently manage their personal finances by tracking income and expenses in a simple and intuitive way. It provides a clean dashboard with real-time insights, allowing users to monitor their spending habits and make better financial decisions.
-        </p>
-    </section>
+<section class="light-section">
+<h2>About</h2>
+<div style="text-align:center;">
+<img src="pic3.png" width="400" id="aboutImage" alt="Smart Expense Tracker">
+</div>
+<p>
+Smart Expense Tracker is a full-stack web application that helps users efficiently manage their personal finances by tracking income and expenses in a simple and intuitive way. It provides a clean dashboard with real-time insights, allowing users to monitor their spending habits and make better financial decisions.
+</p>
+</section>
 
-    <section class="dark-section">
-        <h2>Features</h2>
-        <ul>
-            <li>User Authentication (Signup/Login)</li>
-            <li>Add, edit, and delete transactions</li>
-            <li>Categorize income and expenses</li>
-            <li>Interactive dashboard with charts and analytics</li>
-            <li>Monthly budget tracking with alerts</li>
-            <li>Filter transactions by date and category</li>
-            <li>Spending insights and trends</li>
-            <li>Export data (PDF/CSV)</li>
-        </ul>
-    </section>
+<section class="dark-section">
+<h2>Features</h2>
+<ul>
+<li>User Authentication (Signup/Login)</li>
+<li>Add, edit, and delete transactions</li>
+<li>Categorize income and expenses</li>
+<li>Interactive dashboard with charts and analytics</li>
+<li>Monthly budget tracking with alerts</li>
+<li>Filter transactions by date and category</li>
+<li>Spending insights and trends</li>
+<li>Export data (PDF/CSV)</li>
+</ul>
+</section>
 
-    <section class="light-section">
-        <h2>Tech Stack</h2>
-        <p>
-            Frontend: HTML, CSS <br>
-            Backend: PHP <br>
-            Database: MySQL <br>
-            Other Tools: VS Code, XAMPP, GitHub, Chart.js
-        </p>
-    </section>
+<section class="light-section">
+<h2>Tech Stack</h2>
+<p>
+Frontend: HTML, CSS<br>
+Backend: PHP<br>
+Database: MySQL<br>
+Other Tools: VS Code, XAMPP, GitHub, Chart.js
+</p>
+</section>
 
-    <section class="dark-section">
-        <h2>Key Highlights</h2>
-        <ul>
-            <li>Real-time financial tracking</li>
-            <li>Clean and responsive UI</li>
-            <li>Data visualization using charts</li>
-            <li>Secure and scalable architecture</li>
-        </ul>
-    </section>
+<section class="dark-section">
+<h2>Key Highlights</h2>
+<ul>
+<li>Real-time financial tracking</li>
+<li>Clean and responsive UI</li>
+<li>Data visualization using charts</li>
+<li>Secure and scalable architecture</li>
+</ul>
+</section>
 
-    <section class="light-section">
-        <h2>Use Case</h2>
-        <p>
-            This application is designed for individuals who want to track their daily expenses, manage budgets, and gain insights into their financial habits.
-        </p>
-    </section>
+<section class="light-section">
+<h2>Use Case</h2>
+<p>This application is designed for individuals who want to track their daily expenses, manage budgets, and gain insights into their financial habits.</p>
+</section>
 
-    <section class="dark-section">
-        <h2>Future Enhancements</h2>
-        <ul>
-            <li>Recurring transactions</li>
-            <li>Dark mode</li>
-            <li>Smart notifications</li>
-            <li>AI-based spending suggestions</li>
-        </ul>
-    </section>
-    
-    <section class="light-section">
-        <h2>How It Works</h2>
+<section class="dark-section">
+<h2>Future Enhancements</h2>
+<ul>
+<li>Recurring transactions</li>
+<li>Dark mode</li>
+<li>Smart notifications</li>
+<li>AI-based spending suggestions</li>
+</ul>
+</section>
 
-        <h3>Steps (Ordered List)</h3>
-        <ol>
-            <li>Create an account</li>
-            <li>Login to dashboard</li>
-            <li>Add income and expenses</li>
-            <li>Track your budget</li>
-            <li>Analyze reports</li>
-        </ol>
+<section class="light-section">
+    <h2>How It Works</h2>
 
-        <h3>Main Features (Unordered List)</h3>
-        <ul>
-            <li>Expense Tracking</li>
-            <li>Budget Planning</li>
-            <li>Analytics Dashboard</li>
-            <li>Secure System</li>
-        </ul>
-    </section>
+    <h3>Steps (Ordered List)</h3>
 
-    <section class="dark-section">
-        <h2>User Registration Form</h2>
+    <ol class="steps-list">
+        <li>Create an account</li>
+        <li>Login to dashboard</li>
+        <li>Add income and expenses</li>
+        <li>Track your budget</li>
+        <li>Analyze reports</li>
+    </ol>
 
-        <form>
-            <label>First Name:</label><br>
-            <input type="text" name="fname"><br><br>
+    <h3>Main Features (Unordered List)</h3>
 
-            <label>Last Name:</label><br>
-            <input type="text" name="lname"><br><br>
+    <ul class="feature-list">
+        <li>Expense Tracking</li>
+        <li>Budget Planning</li>
+        <li>Analytics Dashboard</li>
+        <li>Secure System</li>
+    </ul>
 
-            <label>Email:</label><br>
-            <input type="email" name="email"><br><br>
+</section>
 
-            <label>Password:</label><br>
-            <input type="password" name="password"><br><br>
+<section class="dark-section">
+<h2>User Registration Form</h2>
 
-            <label>Gender:</label><br>
-            <input type="radio" name="gender"> Male
-            <input type="radio" name="gender"> Female<br><br>
+<form>
+<label>First Name:</label><br>
+<input type="text"><br><br>
 
-            <label>Services Used:</label><br>
-            <input type="checkbox"> Expense Tracking
-            <input type="checkbox"> Budget Planning
-            <input type="checkbox"> Reports<br><br>
+<label>Last Name:</label><br>
+<input type="text"><br><br>
 
-            <label>Expense Category:</label><br>
-            <select>
-                <option>Food</option>
-                <option>Travel</option>
-                <option>Shopping</option>
-                <option>Bills</option>
-            </select><br><br>
+<label>Email:</label><br>
+<input type="email"><br><br>
 
-            <button type="submit">Submit</button>
-            <button type="reset">Reset</button>
-        </form>
-    </section>
+<label>Password:</label><br>
+<input type="password"><br><br>
 
-    <section class="light-section">
-        <h2>Learn More</h2>
+<label>Gender:</label><br>
+<input type="radio" name="gender"> Male
+<input type="radio" name="gender"> Female
+<br><br>
 
-        <iframe width="100%" height="500"
-            src="https://neknight.carrd.co/?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPOTM2NjE5NzQzMzkyNDU5AAGnGhcP_s1Ru4sB_WZgujgvzMofmlrz7KsaNWbqOxtZjcuAmw7XXsP9n44xQTM_aem_l8_6L4YiYA-mb08Pjmj3Vg">
-        </iframe>
-    </section>
+<label>Services Used:</label><br>
+<input type="checkbox"> Expense Tracking
+<input type="checkbox"> Budget Planning
+<input type="checkbox"> Reports
+<br><br>
 
-    <section class="dark-section">
-        <h2>Our Work</h2>
-        <center>
-            <img src="pic1.jpg" width="250">
-            <img src="pic2.jpg" width="250">
-            <img src="pic4.jpg" width="250">
-            <img src="pic5.jpg" width="250">
-        </center>
-    </section>
+<label>Expense Category:</label><br>
+<select>
+<option>Food</option>
+<option>Travel</option>
+<option>Shopping</option>
+<option>Bills</option>
+</select>
+<br><br>
 
-    <footer>
-        <p>© 2026 Nexora | All Rights Reserved</p>
-    </footer>
+<button type="submit">Submit</button>
+<button type="reset">Reset</button>
+</form>
+</section>
+
+<section class="light-section">
+<h2>Learn More</h2>
+
+<p style="text-align:center;">
+Visit our
+<a href="https://github.com/" target="_blank">GitHub Repository</a>
+</p>
+
+<iframe title="Learn More About Nexora"
+width="100%"
+height="500"
+src="https://neknight.carrd.co/?utm_source=ig&utm_medium=social&utm_content=link_in_bio">
+</iframe>
+</section>
+
+<section class="dark-section">
+<h2>Our Work</h2>
+<div style="text-align:center;">
+<img src="pic1.jpg" width="250" alt="Project Image 1">
+<img src="pic2.jpg" width="250" alt="Project Image 2">
+<img src="pic4.jpg" width="250" alt="Project Image 3">
+<img src="pic5.jpg" width="250" alt="Project Image 4">
+</div>
+</section>
+
+<footer>
+<p>© 2026 Nexora | All Rights Reserved</p>
+</footer>
 
 </body>
 </html>
