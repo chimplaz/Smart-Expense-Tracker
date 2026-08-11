@@ -1,151 +1,157 @@
-/* ========================= */
-/* Universal Selector */
-/* ========================= */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* ========================= */
-/* Body Styling */
-/* ========================= */
 body {
-    font-family: Arial, sans-serif;
-    background-color: hsl(200, 30%, 95%); /* HSL */
-    color: #333; /* HEX */
+    font-family: Arial;
+    background: linear-gradient(to right,#0f2027,#203a43,#2c5364);
+    color: white;
 }
 
-/* ========================= */
-/* Header (HEX Color) */
-/* ========================= */
+/* HEADER */
 header {
-    background-color: #0a192f; /* HEX */
-    color: white;
-    padding: 20px 10px 20px 10px; /* Top Right Bottom Left */
-    border-bottom: 5px solid #00d4ff; /* SOLID BORDER */
-    text-align:center;
+    text-align: center;
+    padding: 20px;
+    background: #0a192f;
 }
 
-/* ========================= */
-/* Navigation Bar */
-/* ========================= */
-nav{
-    background:linear-gradient(to right, #001f3f, #003366);
-    padding:15px;
-    display:flex;
-    justify-content:center;
-    gap:30px;
-    position:sticky;
-    top:0;
-    z-index:1000;
-    border-bottom:3px solid #00d4ff;
-}
-
-/* Navbar links */
-nav a{
-    color:white;
-    text-decoration:none;
-    font-size:18px;
-    font-weight:bold;
-    position:relative;
-    padding:5px 10px;
-    transition:0.3s;
-}
-
-/* Underline base (IMPORTANT FIX) */
-nav a::after{
-    content:"";
-    position:absolute;
-    left:0;
-    bottom:-5px;
-    width:0%;
-    height:2px;
-    background:#00ffcc;
-    transition:0.3s;
-}
-
-/* Expand underline on hover */
-nav a:hover::after{
-    width:100%;
-}
-
-/* Change text color on hover */
-nav a:hover{
-    color:#00ffcc;
-}
-
-/* ========================= */
-/* Section Area */
-/* ========================= */
-section {
-    margin: 20px;
-    padding: 20px 25px 20px 25px; /* TRBL */
-    border-radius: 10px;
-}
-
-/* ========================= */
-/* Dark Section */
-/* ========================= */
-.dark-section {
-    background-color: rgba(0, 0, 0, 0.7); /* RGBA */
-    color: white;
-    border:3px double #00ffcc; /* DOUBLE BORDER */
-}
-
-/* ========================= */
-/* Image Styling */
-/* ========================= */
-img {
-    border-radius: 10px;
-    border: 4px groove white; /* GROOVE BORDER */
-}
-
-/* ========================= */
-/* About Image ID */
-/* ========================= */
-#aboutImage {
-    border: 5px ridge #00ffcc; /* RIDGE BORDER */
-}
-
-/* ========================= */
-/* Links */
-/* ========================= */
-a {
+marquee {
+    background: #001f3f;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
     color: #00d4ff;
 }
 
-a:hover {
-    color: #0d00ffd6;
-    text-decoration: underline;
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px;
+    background: #001f3f;
 }
 
-/* ========================= */
-/* Form */
-/* ========================= */
-form {
-    padding: 15px 20px 15px 20px;
-    border-radius: 10px;
-    border: 2px solid #ccc; /* SOLID BORDER */
-}
-
-/* ========================= */
-/* Footer */
-/* ========================= */
-footer {
-    background-color: #0a192f; /* HEX */
+nav a {
     color: white;
-    padding: 20px 10px 20px 10px; /* TRBL */
-    border-top: 5px solid #00d4ff; /* SOLID BORDER */
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* space between icon and text */
+}
+
+nav a i {
+    font-size: 16px;
+}
+
+/* SECTION */
+section {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+/* CENTER ALL SECTION TITLES */
+section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* COLORS */
+.light-section {
+    background: rgba(255,255,255,0.1);
+}
+
+.dark-section {
+    background: rgba(0,0,0,0.6);
+}
+
+/* ABOUT */
+.about-container {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr; /* more space for text */
+    gap: 40px;
+    align-items: center;
+}
+
+.about-text p {
+    font-size: clamp(24px, 3vw, 42px); /* BIG responsive text */
+    line-height: 1.7;
+    font-weight: 600;
+    max-width: 600px;
+}
+
+/* FEATURES  */
+.features-grid {
+    display: flex;
+    justify-content: center;
+    gap: 400px;
+}
+
+/* TECH STACK */
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 15px;
+}
+
+.card {
+    background: rgba(0,0,0,0.7);
+    padding: 20px;
+    border-radius: 10px;
     text-align: center;
 }
 
-/* Extra RGB Example */
-section{
-    background-color: rgb(240, 248, 255);
+/* STEPS */
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    text-align: center;
 }
 
-/* Extra Border Type */
-.light-section{
-    border: 3px dotted #00d4ff;
+/* WORK */
+.work-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.work-grid img {
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.work-grid img:hover {
+    transform: scale(1.05);
+}
+
+/* FORM */
+.form-container {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* IMAGE */
+img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #0a192f;
 }
